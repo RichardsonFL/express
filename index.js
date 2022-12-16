@@ -1,7 +1,7 @@
 const express = require("express")
 //const bodyParser = require("body-parser")    // also native node module
 
-const PORT = 5000 || process.env.PORT
+const PORT = process.env.PORT ||  5000
 const userRoutes = require("./routes/userRoutes")
 
 const app = express();  //instance os Express
