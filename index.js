@@ -1,6 +1,7 @@
 const express = require("express")
 //const bodyParser = require("body-parser")    // also native node module
 
+const PORT = 5000 || process.env.PORT
 const userRoutes = require("./routes/userRoutes")
 
 const app = express();  //instance os Express
@@ -18,6 +19,6 @@ app.get('/', (req, res) => {
 userRoutes(app)
 
 // puting server on runtime
-app.listen(process.env.PORT, () => {
-    console.log(`Node server is running in port: ${port}`)
+app.listen(PORT, () => {
+    console.log(`Node server is running in port: ${PORT}`)
 })
