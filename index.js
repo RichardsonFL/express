@@ -4,7 +4,7 @@ const express = require("express")
 const userRoutes = require("./routes/userRoutes")
 
 const app = express();  //instance os Express
-const port = 3000
+
 
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
@@ -18,12 +18,6 @@ app.get('/', (req, res) => {
 userRoutes(app)
 
 // puting server on runtime
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Node server is running in port: ${port}`)
 })
-function (){
-
-}
-
-const hp = require("http")
-hp.
