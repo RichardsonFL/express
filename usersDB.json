@@ -3,6 +3,21 @@
 		"id": "1",
 		"name": "User Default",
 		"admin": "true",
-		"email": "user.default@email.com"
+		"email": "user.default@email.com",
+		"bio": "Olá! Eu sou um usuário padrão e ultimamente não faço viagens nem passeios"
+	},
+	{
+		"id": "2",
+		"name": "Seu Guia",
+		"admin": "true",
+		"email": "seu.guiat@email.com",
+		"bio": "Olá! Eu sou o administrador do sistema, não faço viagens, mas posso encontrar os melhores destinos para você!"
+	},
+	{
+		"id": "3",
+		"name": "Richardson Florêncio",
+		"admin": "true",
+		"email": "richardson.florencio@email.com",
+		"bio": "Olá! Eu sou o administrador do sistema, não faço viagens, mas posso encontrar os melhores destinos para você!"
 	}
 ]

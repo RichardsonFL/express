@@ -36,8 +36,11 @@ const usersRoutes = (app) => {
     .post((req, res) => {
         console.log("http method POST Sended!")
         const users = getUsers()
-        
-        users.push(req.body)
+        users.push({
+            id: users.length + 1,
+            ...req.body
+        });
+
         saveUser(users)       // Write in "DB"
         res.status(201).send(`User created: ${JSON.stringify(req.body.nome)}`)
         
